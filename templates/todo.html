@@ -1,0 +1,20 @@
+
+    <form action="/new" method="POST">
+        <input type="text" name="url" />
+        
+        <input type="submit" name="submit" value="submit"/>
+    </form>
+    {% for item in items %}
+        <table style="width:100%">
+            <tr>
+                <th>Product name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.price }}</td>
+            </tr>
+        </table>
+        
+    {%endfor%}
+
